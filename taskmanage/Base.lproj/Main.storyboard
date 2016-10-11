@@ -101,18 +101,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xs-E4-0UJ">
-                                <rect key="frame" x="544" y="78" width="36" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Save"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr5-K4-aWc">
-                                <rect key="frame" x="13" y="72" width="51" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Cancel"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtG-JI-tNq">
-                                <rect key="frame" x="20" y="112" width="33.5" height="21"/>
+                                <rect key="frame" x="20" y="112" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -138,7 +128,7 @@
                                 </date>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDB-6p-u6M">
-                                <rect key="frame" x="20" y="183" width="70.5" height="21"/>
+                                <rect key="frame" x="20" y="183" width="71" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -164,11 +154,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qtG-JI-tNq" firstAttribute="top" secondItem="hr5-K4-aWc" secondAttribute="bottom" constant="10" id="1re-0j-GK6"/>
                             <constraint firstItem="CtC-TW-837" firstAttribute="leading" secondItem="kgl-lI-mhH" secondAttribute="leadingMargin" id="5MS-R1-xJ5"/>
                             <constraint firstItem="MKr-R7-oDW" firstAttribute="trailing" secondItem="kgl-lI-mhH" secondAttribute="trailingMargin" id="7WZ-4w-REL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CtC-TW-837" secondAttribute="trailing" id="D8n-D7-cil"/>
-                            <constraint firstAttribute="trailing" secondItem="4xs-E4-0UJ" secondAttribute="trailing" constant="20" id="GGQ-sy-1AU"/>
                             <constraint firstItem="qtG-JI-tNq" firstAttribute="leading" secondItem="kgl-lI-mhH" secondAttribute="leadingMargin" id="I8g-Tw-x0M"/>
                             <constraint firstItem="zDB-6p-u6M" firstAttribute="leading" secondItem="kgl-lI-mhH" secondAttribute="leadingMargin" id="MLj-jU-991"/>
                             <constraint firstItem="mMe-6Q-VCN" firstAttribute="top" secondItem="zDB-6p-u6M" secondAttribute="bottom" constant="10" id="MuN-Rn-T2m"/>
@@ -177,25 +165,21 @@
                             <constraint firstItem="CtC-TW-837" firstAttribute="top" secondItem="qtG-JI-tNq" secondAttribute="bottom" constant="10" id="QO6-dq-chu"/>
                             <constraint firstItem="l2b-5N-b45" firstAttribute="trailing" secondItem="kgl-lI-mhH" secondAttribute="trailingMargin" id="Qlc-HI-vtT"/>
                             <constraint firstItem="zDB-6p-u6M" firstAttribute="top" secondItem="CtC-TW-837" secondAttribute="bottom" constant="10" id="THf-Ug-Vql"/>
-                            <constraint firstItem="4xs-E4-0UJ" firstAttribute="top" secondItem="Ogp-EM-mew" secondAttribute="bottom" constant="14" id="VR4-64-xXP"/>
                             <constraint firstItem="MKr-R7-oDW" firstAttribute="leading" secondItem="kgl-lI-mhH" secondAttribute="leadingMargin" id="Www-kd-GDi"/>
                             <constraint firstItem="paj-76-aqR" firstAttribute="top" secondItem="mMe-6Q-VCN" secondAttribute="bottom" constant="10" id="evh-Df-hl4"/>
                             <constraint firstItem="l2b-5N-b45" firstAttribute="top" secondItem="paj-76-aqR" secondAttribute="bottom" constant="10" id="f2R-Da-NnS"/>
+                            <constraint firstItem="ZPu-EO-Il2" firstAttribute="top" secondItem="MKr-R7-oDW" secondAttribute="bottom" constant="31" id="jRQ-Ck-P3n"/>
                             <constraint firstItem="paj-76-aqR" firstAttribute="leading" secondItem="kgl-lI-mhH" secondAttribute="leadingMargin" id="jve-S0-DEz"/>
                             <constraint firstItem="mMe-6Q-VCN" firstAttribute="leading" secondItem="kgl-lI-mhH" secondAttribute="leadingMargin" id="maa-XB-byt"/>
-                            <constraint firstItem="hr5-K4-aWc" firstAttribute="leading" secondItem="kgl-lI-mhH" secondAttribute="leading" constant="13" id="pOO-aK-Pyh"/>
                             <constraint firstItem="MKr-R7-oDW" firstAttribute="top" secondItem="l2b-5N-b45" secondAttribute="bottom" constant="10" id="rgU-Uy-qH7"/>
-                            <constraint firstItem="hr5-K4-aWc" firstAttribute="top" secondItem="Ogp-EM-mew" secondAttribute="bottom" constant="8" id="tAN-jN-rii"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="cancelButton" destination="hr5-K4-aWc" id="SWU-Sh-GLv"/>
                         <outlet property="categoryTextField" destination="mMe-6Q-VCN" id="0PT-rc-bBS"/>
                         <outlet property="contentsTextView" destination="l2b-5N-b45" id="FJZ-XD-9se"/>
                         <outlet property="datePicker" destination="MKr-R7-oDW" id="Obd-rK-142"/>
-                        <outlet property="saveButton" destination="4xs-E4-0UJ" id="jnY-ZI-oo6"/>
                         <outlet property="titleTextField" destination="CtC-TW-837" id="e9t-SX-Wgg"/>
                     </connections>
                 </viewController>
