@@ -77,10 +77,7 @@ class InputViewController: UIViewController {
             notification.alertBody = "\(task.title)"
             notification.soundName = UILocalNotificationDefaultSoundName
             notification.userInfo = ["id":task.id]
-            notification.timeZone = NSTimeZone.defaultTimeZone()
-            notification.alertBody = "\(task.title)"
-            notification.soundName = UILocalNotificationDefaultSoundName
-            notification.userInfo = ["id":task.id]
+
             UIApplication.sharedApplication().scheduleLocalNotification(notification)
         }
     }
