@@ -37,7 +37,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
         inputText = searchText
-        print( inputText! )
         if inputText != nil {
                 taskArray = try! Realm().objects(Task).sorted("date", ascending: false).filter("category CONTAINS[c] %@", inputText! )
         }
@@ -106,7 +105,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 }
             }
             
-            // データベースから削除する  // ←以降追加する
+            // データベースから削除する  //
             try! realm.write {
                 self.realm.delete(self.taskArray[indexPath.row])
                 tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)

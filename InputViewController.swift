@@ -11,8 +11,6 @@ import RealmSwift
 
 class InputViewController: UIViewController {
 
-    @IBOutlet weak var cancelButton: UIButton!
-    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var contentsTextView: UITextView!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -69,15 +67,22 @@ class InputViewController: UIViewController {
             }
         }
         
-        let notification = UILocalNotification()
+        let time = task.date.timeIntervalSinceDate( NSDate())
         
-        notification.fireDate = task.date
-        notification.timeZone = NSTimeZone.defaultTimeZone()
-        notification.alertBody = "\(task.title)"
-        notification.soundName = UILocalNotificationDefaultSoundName
-        notification.userInfo = ["id":task.id]
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        if time >= 0 {
+            let notification = UILocalNotification()
         
+            notification.fireDate = task.date
+            notification.timeZone = NSTimeZone.defaultTimeZone()
+            notification.alertBody = "\(task.title)"
+            notification.soundName = UILocalNotificationDefaultSoundName
+            notification.userInfo = ["id":task.id]
+            notification.timeZone = NSTimeZone.defaultTimeZone()
+            notification.alertBody = "\(task.title)"
+            notification.soundName = UILocalNotificationDefaultSoundName
+            notification.userInfo = ["id":task.id]
+            UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        }
     }
 
 }
